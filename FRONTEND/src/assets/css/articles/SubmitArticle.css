@@ -1,0 +1,36 @@
+.submit-container {
+    max-width: 500px;
+    margin: 100px auto; /* centers horizontally and gives vertical spacing */
+    height: 400px;
+    padding: 30px 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+.submit-container p{
+    font-size: 20px;
+    color: #5fcf80;
+    line-height: 50px;
+}
+.tick-icon {
+    font-size: 48px;
+    margin: 20px 0;
+  }
+  
+  .home-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .home-button:hover {
+    background-color: #45a049;
+  }

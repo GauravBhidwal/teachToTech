@@ -1,0 +1,44 @@
+.editor-container {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  .editor-title {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .editor-title span {
+    color: red;
+  }
+  
+  .title-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .text-editor {
+    height: 300px;
+    border: 1px solid #ccc;
+    font-size: medium;
+  }
+  .add-notes{
+    text-align: center;
+    color: #5fcf80;
+  }
+  .create-topic-button{
+    margin-bottom: 30px;
+  }
+  .submit-notes-button{
+    margin-top: 30px;
+    margin-left: 400px;
+  }

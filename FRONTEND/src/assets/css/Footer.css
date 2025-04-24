@@ -1,0 +1,147 @@
+.section_padding{
+    padding: 2rem 4rem;
+}
+.footer{
+    color: var(--default-color);
+    background-color: #f9f9f9;
+    font-family: var(--default-font);
+    z-index: 100;
+}
+.sb_footer{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -50px;
+}
+.sb_footer-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.sb_footer-links-div{
+    width: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #444444;    
+}
+.footer .sb_footer-links-div .heading{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Raleway", sans-serif;;
+    color: #37423b;
+    margin-top: 0px;
+}
+
+.sb_footer-links-div ul{
+    list-style-type: none;
+    margin-left: 0px;
+    margin-top: -9px;
+}
+.address p{
+   font-size: 14px;
+   text-wrap: nowrap;
+}
+.sb_footer-links-div ul li{
+    padding: 7px 0px;
+}
+
+.sb_footer-links-div ul li a{
+    color: rgb(175,175,179);
+    text-decoration: none;
+}
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.socialmedia p{
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 50%;
+}
+.sb_footer-links-div h4{
+    margin-bottom: 0.9rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+.sb_footer-links-div .address{
+    margin-top: 12px;
+    margin-bottom: 0.9rem;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+}
+p{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+.sb_footer-below{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content:center;
+    background-color: #5fcf80;
+    height: 120px;
+}
+
+hr{
+    color: white !important;
+    width: 100%;
+}
+.sb_footer-below .company-name-footer{
+    padding: 10px;
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+.sb_footer-below p{
+   font-size: 1.25rem;
+   line-height: 15px;
+   color: rgb(255,255,255);
+   font-weight: 500;
+   margin-top: 16px;
+}
+
+
+
+.newsletter-box h5{
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.newsletter-box .follow-page{
+    margin-top: 20px;
+}
+
+.newsletter-box .ending{
+    margin-bottom: 20px;
+}
+
+.newsletter-box input{
+    height: 30px;
+    width: 240px;
+    border-radius: 25px;
+    border: 0.1px solid #000;
+}
+
+.newsletter-box button{
+    padding: 10px;
+    background-color: #5fcf80;
+    color: #f9f9f9;
+    cursor: pointer;
+    margin-left: -50px;
+    border-radius: 25px;
+    border: none;
+    width: 100px;
+}

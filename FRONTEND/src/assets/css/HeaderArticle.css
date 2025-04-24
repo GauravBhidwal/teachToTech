@@ -1,0 +1,171 @@
+/* Header Styling */
+.navbar-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #FFF;
+    color: #5fcf80;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 90px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  /* Logo Section */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1001;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  
+  .brand-name {
+    font-weight: 700;
+    font-size: 24px;
+    color: #5fcf80;
+    font-family: "Raleway", sans-serif;
+    white-space: nowrap;
+  }
+  
+  /* Common Navigation Layout */
+  .nav-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #5fcf80;
+  }
+  
+  /* Auth Buttons */
+  .auth-buttons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .auth-btn {
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s;
+  }
+  
+  .login-btn, .register-btn {
+    background-color: #5fcf80;
+    color: white;
+  }
+  
+  .auth-btn:hover {
+    background-color: #4caf6d;
+  }
+  
+  /* Mobile Menu Toggle */
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1002;
+    color: #5fcf80;
+    padding: 5px;
+    position: relative; /* Ensures it stays in header */
+  }
+  
+  /* Responsive (mobile + tablet <= 1024px) */
+  @media (max-width: 1024px) {
+    .mobile-menu-btn {
+      display: block;
+    }
+  
+    .nav-content {
+      position: fixed;
+      top: 65px; /* Starts right below navbar */
+      left: 0;
+      width: 100%;
+      background-color: white;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px 0;
+      gap: 20px;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      height: calc(100vh - 65px); /* Full viewport minus header */
+      overflow-y: auto; /* Scrollable if content is long */
+    }
+  
+    .nav-content.mobile-menu-open {
+      transform: translateY(0);
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav-links a {
+      padding: 12px 0;
+      width: 100%;
+    }
+  
+    .auth-buttons {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      gap: 15px;
+      padding: 0 20px;
+    }
+  
+    .auth-btn {
+      width: 100%;
+      max-width: 150px;
+      padding: 10px;
+    }
+  }
+  
+  /* Desktop only */
+  @media (min-width: 1025px) {
+    .mobile-menu-btn {
+      display: none;
+    }
+  
+    .nav-content {
+      flex-direction: row;
+      position: static;
+      transform: none !important;
+      padding: 0;
+      box-shadow: none;
+      height: auto;
+    }
+  }

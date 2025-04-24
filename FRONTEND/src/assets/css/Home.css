@@ -1,0 +1,324 @@
+/* AboutSection.css */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    
+}
+
+.text-holder {
+    width: 50%;
+    padding-right: 40px;
+}
+
+.text-holder h3 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+.text-holder p {
+    font-size: 20px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.img-holder {
+    width: 50%;
+    height: 50vh;
+    background-image: url('/about.jpg'); /* Make sure image path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.offering{
+    font-size: 24px;
+    margin-left: 37px;
+}
+.container {
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+    margin-left: 37px;
+  }
+  
+  .col {
+    width: 400px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 93%;
+  }
+  
+  .card-body {
+    text-align: left;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #5fcf80;
+  }
+  
+  ul {
+    padding: 10px;
+    margin-left: 23px;
+  }
+  
+  ul li {
+    padding: 5px 0;
+  }
+  
+  .text-center {
+    margin-top: 40px;
+  }
+  
+  .read-more {
+    background-color: #5fcf80;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 400px;
+    text-align: center;
+  }
+ 
+  
+  .arrow {
+    font-size: 16px;
+  }
+  .text-center {
+    margin-top: 40px;
+    margin-left: 300px;
+}
+#counts{
+    margin-top: 70px;
+    background-color: #f9f9f9;
+}
+.choose-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 60px 10px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+
+.card1 {
+  background: white;
+  padding: 40px 30px;
+  text-align: center;
+  width: 180px;
+  transition: transform 0.3s ease-in-out;
+  border: .5px solid #ddd;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  
+}
+.maincard{
+  background: #5fcf80;
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3s ease-in-out;
+  border: .5px solid #ddd;
+  height: auto;
+}
+.maincard h3{
+  color: white;
+  font-size: 35px;
+  text-align: left;
+  line-height: 40px;
+}
+.card1:hover {
+  transform: translateY(-5px);
+}
+
+
+.learn-more {
+  margin-top: 10px;
+  padding:  8px 40px 10px 40px;
+  color: white;
+  border-radius: 5px;
+  background: color-mix(in srgb, #ffffff, transparent 85%);
+  display: inline-block;
+  cursor: pointer;
+  transition: all ease-in-out 0.4s;
+  border-radius: 50px;
+}
+.learn-more i{
+   margin-left: 20px;
+   font-size: 15px;
+}
+
+
+
+.heading-content {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 40px;
+  line-height: 20px;
+  margin-top: 50px;
+}
+
+.inside-content {
+  font-size: 14px;
+  line-height: 20px;
+  color: #666;
+}
+ .main-card-content{
+  font-size: 16px;
+  color: white;
+  line-height: 25px;
+  text-align: left;
+  margin-top: 20px;
+ }
+ .team-intro{
+   margin-bottom: 150px;
+ }
+
+ .testimonial-section{
+  background-color: white;
+  margin-bottom: 20px;
+ }
+
+
+ /* responsive */
+ /* For tablets (768px and below) */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-holder, .img-holder {
+    width: 100%;
+    padding: 0;
+  }
+
+  .img-holder {
+    height: 40vh;
+    margin-top: 20px;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .col {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .read-more {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .text-center {
+    margin-left: 0;
+  }
+
+  .choose-products {
+    flex-direction: column;
+    padding: 40px 10px;
+  }
+
+  .maincard, .card1 {
+    width: 90%;
+    height: auto;
+  }
+
+  .maincard h3 {
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  .main-card-content {
+    text-align: center;
+  }
+
+  .testimonial-section {
+    padding: 20px;
+  }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .text-holder h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .text-holder p {
+    font-size: 16px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .offering {
+    font-size: 20px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  ul {
+    margin-left: 0;
+  }
+
+  .read-more {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .learn-more {
+    font-size: 14px;
+    padding: 6px 25px;
+  }
+
+  .learn-more i {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .heading-content {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .inside-content {
+    font-size: 13px;
+  }
+}

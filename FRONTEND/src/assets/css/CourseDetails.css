@@ -1,0 +1,168 @@
+/* External CSS for CourseDetails Component */
+
+.course-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 100px auto;
+    gap: 20px;
+    background-color: white;
+}
+
+/* Left Column (Course Info) */
+.course-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+.course-info h1 {
+    font-size: 28px;
+    color: #5fcf80;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: gold;
+    margin-top: 10px;
+}
+.course-heading{
+    color: #5fcf80;
+    font-size: 16px;
+}
+.smalldescription{
+    font-size: 16px;
+    border: 1px solid transparent;
+    background: color-mix(in srgb, #b4a6a6, transparent 95%);
+    border-radius: 5px;
+    height: 40px;
+    display: flex; 
+    align-items: center; 
+    justify-content: left; 
+    padding: 5px 10px;
+    gap: 10px;
+}
+.trainer-container {
+    display: flex;
+    align-items: left;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .trainer-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .trainer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  .trainer-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .trainer-description {
+    font-size: 15px;
+    color: #555;
+    line-height: 20px;
+  }
+  
+  .course-structure {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+  }
+  
+  .module {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .module-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 12px 15px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .module-title {
+    flex: 1;
+    font-size: small;
+  }
+  
+  .module-count {
+    font-size: 16px;
+    font-weight: bold;
+    color: #5fcf80;
+  }
+  
+  .arrow {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+    color: #5fcf80;
+  }
+  
+  .arrow.open {
+    transform: rotate(180deg);
+  }
+  
+  .module-details {
+    background: #fff;
+    padding: 10px 15px;
+  }
+  
+  .module-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+/* Right Column (YouTube Video) */
+.video-container {
+    flex: 1;
+    max-width: 500px;
+}
+.video-container h4{
+    color: #5fcf80;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .course-info, .video-container {
+        max-width: 100%;
+    }
+
+    .video-container iframe {
+        height: 250px;
+    }
+}

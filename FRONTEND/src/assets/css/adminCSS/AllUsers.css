@@ -1,0 +1,118 @@
+.all-users-container{
+  padding: 10px 60px;
+}
+.search-sort{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.search-sort h2{
+    font-size: 30px;
+}
+.search-allusers{
+    width: 30%;
+    border-radius: 5px;
+}
+.sortby-allusers{
+    height: 55px;
+    width: 25%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+.table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  /* Header Styling */
+  .heading th {
+    background-color: #5fcf80;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  /* Table Cell Styling */
+  .table th,
+  .table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Zebra Stripes */
+  .table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Row Hover Effect */
+  .table-hover tbody tr:hover {
+    background-color: #eaf2e5;
+  }
+  
+  /* Buttons */
+  .btn {
+    font-size: 14px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  /* Update Button */
+  .update-btn {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+  
+  /* Delete Button */
+  .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-left: 20px;
+  }
+
+  .btn-comment {
+    background-color:  #0d6efd;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    margin-left: 20px;
+  }
+  
+  /* Button Hover Effects */
+  .update-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+  /* Responsive Table Font */
+  @media (max-width: 768px) {
+    .table th, .table td {
+      font-size: 12px;
+    }
+  
+    .btn {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  }
+  

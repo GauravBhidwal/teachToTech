@@ -1,0 +1,251 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Hero Section */
+.font-look2 {
+    background-image: url('/about-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 60px;
+    color: white;
+}
+
+.content-box {
+    max-width: 800px;
+}
+
+.font-text {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.content {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1300px;
+}
+
+/* Heading Styling */
+.heading-border {
+    border: 2px solid red;
+    background-color: #5fcf80;
+}
+
+.heading-border .heading-line {
+    font-size: 24px;
+    color: white;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    background-color: #5fcf80;
+    padding: 8px 2px;
+    height: 35px;
+}
+
+.container {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.breadcrumbs .container ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* About Section */
+.about-us {
+    padding: 60px 20px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.about-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.about-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.check-icon {
+    font-size: 1.2rem;
+    color: green;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content, .about-image {
+        max-width: 100%;
+    }
+
+    .about-image {
+        justify-content: center;
+    }
+}
+
+/* Stats Section */
+.counts {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    --surface-color: #ccc;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stats-item {
+    flex: 1;
+    max-width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    color: #5fcf80;
+}
+
+.stats-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.stats-item span {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #5fcf80;
+}
+
+.stats-item p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stats-item {
+        max-width: 100%;
+        width: 80%;
+    }
+}
+
+/* Testimonials */
+.quote-icon-left, .quote-icon-right {
+    color: #7fcda1;
+    font-size: 24px;
+}
+
+  .subheading {
+    font-size: 24px;
+    font-weight: 600;
+    color: #888;
+    letter-spacing: 1px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .underline {
+    display: inline-block;
+    width: 280px;
+    height: 2px;
+    background-color: #5fcf80;
+    position: relative;
+    top: -5px;
+    margin-left: 10px;
+  }
+  
+  .heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 10px;
+  }
+.container2{
+    margin-left: 100px;
+}
+.container2 P{
+    font-size: 16px;
+    color: #ccc;
+}

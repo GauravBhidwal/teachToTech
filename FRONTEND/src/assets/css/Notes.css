@@ -1,0 +1,175 @@
+.notes-container {
+    display: flex;
+    align-items: stretch; 
+    min-height: calc(100vh - 70px); 
+}
+.notes-content {
+    flex: 1;
+    background-color: white;  
+    margin-top: 80px;
+    padding: 8px 3px;
+  }
+  .notes-content-heading {
+    background-color: #5fcf80;
+    color: black;
+    padding:  20px;
+    font-weight: bold;
+    white-space: nowrap;
+    height: 80px;
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .notes-content-description {
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    flex: 1;
+  }
+ .assignment-content h1{
+    text-align: center;
+    color: #5fcf80;
+    margin-top: 50px;
+ }
+ .notes-content-description p{
+    font-size: 1rem;
+    padding: 5px;
+ }
+ .notes-content-description ol{
+    padding-left: 40px;
+ }
+ .edit-delete-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: 500px;
+  margin-top: 100px;
+}
+
+.edit-button {
+  background-color: #ffa500;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.save-button{
+  background-color: #5fcf80;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+ .assignment-description{
+  padding-left: 40px;
+  
+}
+.assignment-description p{
+  font-size: 16px;
+}
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .notes-container {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .notes-content {
+    margin-top: 100px;
+    padding: 10px;
+  }
+
+  .notes-content-heading {
+    font-size: 20px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .notes-content-description {
+    padding: 10px;
+  }
+
+  .edit-delete-buttons {
+    margin-left: 0;
+    margin-top: 40px;
+    justify-content: center;
+  }
+
+  .edit-button,
+  .delete-button,
+  .save-button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .assignment-content h1 {
+    font-size: 22px;
+    margin-top: 30px;
+  }
+
+  .assignment-description {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .assignment-description p {
+    font-size: 15px;
+  }
+
+  .notes-content-description p {
+    font-size: 15px;
+  }
+
+  .notes-content-description ol {
+    padding-left: 25px;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .notes-content-heading {
+    font-size: 18px;
+    padding: 10px;
+    
+  }
+
+  .assignment-content h1 {
+    font-size: 20px;
+  }
+
+  .edit-delete-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .edit-button,
+  .delete-button,
+  .save-button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .notes-content-description p,
+  .assignment-description p {
+    font-size: 14px;
+  }
+
+  .assignment-description {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .notes-content-description ol {
+    padding-left: 20px;
+  }
+}
